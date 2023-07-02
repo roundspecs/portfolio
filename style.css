@@ -1,17 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
 
 :root {
-  --background  : #282828;
-  --foreground  : #f1f1f1;
-  --orange      : #f18260;
-  --blue        : #92bfbf;
-  --green       : #ede480;
-  --gray        : #3c3c3c;
-  --gray-light  : #4c4c4c;
+  --background: #282828;
+  --foreground: #f1f1f1;
+  --orange: #f18260;
+  --blue: #92bfbf;
+  --yellow: #ede480;
+  --gray: #3c3c3c;
+  --gray-light: #4c4c4c;
 }
 
 * {
   font-family: 'Source Code Pro', monospace;
+}
+
+.orange,
+.orange>* {
+  color: var(--orange);
+}
+
+.blue,
+.blue>* {
+  color: var(--blue);
+}
+
+.yellow,
+.yellow>* {
+  color: var(--yellow);
 }
 
 .section {
@@ -19,4 +34,50 @@
   width: 100vw;
   background-color: var(--background);
   color: var(--foreground);
+}
+
+.section.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.section.home>.nav,
+.section.home>.social {
+  width: 100%;
+}
+
+.section.home>.nav>ul,
+.section.home>.social>ul {
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.section.home>.nav>ul {
+  flex-direction: row-reverse;
+}
+
+.section.home>.social>ul {
+  flex-direction: row;
+}
+
+.section.home>.nav>ul>li,
+.section.home>.social>ul>li {
+  margin: 20px;
+}
+
+.section.home>.nav>ul>li>a,
+.section.home>.social>ul>li>a {
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+}
+
+
+.section.home>.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
 }
