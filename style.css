@@ -120,6 +120,10 @@
   margin: 20px 0;
 }
 
+.section.projects > .project-item > a {
+  font-weight: 600;
+}
+
 .section.awards {
   padding: 0 40px 40px 40px;
 }
@@ -127,6 +131,11 @@
 .section.awards > .project-item {
   margin: 20px 0;
 }
+
+.section.awards > .project-item > a {
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 1550px) {
   .section.about {
     flex-direction: column;
