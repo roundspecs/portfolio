@@ -103,7 +103,7 @@
   font-size: 256px;
 }
 
-.section.about>.left>h1 {
+.heading {
   font-style: italic;
   font-weight: 900;
 }
@@ -112,6 +112,21 @@
   max-width: 900px;
 }
 
+.section.projects {
+  padding: 0 40px 40px 40px;
+}
+
+.section.projects > .project-item {
+  margin: 20px 0;
+}
+
+.section.awards {
+  padding: 0 40px 40px 40px;
+}
+
+.section.awards > .project-item {
+  margin: 20px 0;
+}
 @media only screen and (max-width: 1550px) {
   .section.about {
     flex-direction: column;
