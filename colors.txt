@@ -1,0 +1,7 @@
+background  : #282828
+foreground  : #f1f1f1
+orange      : #f18260
+blue        : #92bfbf
+green       : #ede480
+gray        : #3c3c3c
+gray_light  : #4c4c4c
