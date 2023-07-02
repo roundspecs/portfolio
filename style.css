@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,900&display=swap');
 
 :root {
   --background: #282828;
@@ -30,13 +30,14 @@
 }
 
 .section {
-  height: 100vh;
   width: 100vw;
+  box-sizing: border-box;
   background-color: var(--background);
   color: var(--foreground);
 }
 
 .section.home {
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -69,7 +70,7 @@
 .section.home>.nav>ul>li>a,
 .section.home>.social>ul>li>a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   color: inherit;
 }
 
@@ -80,4 +81,45 @@
   justify-content: center;
   align-items: center;
   padding: 40px;
+}
+
+.section.about {
+  padding: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section.about>.left,
+.section.about>.right {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+
+.section.about>.right>h1 {
+  font-size: 256px;
+}
+
+.section.about>.left>h1 {
+  font-style: italic;
+  font-weight: 900;
+}
+
+.section.about>.left {
+  max-width: 900px;
+}
+
+@media only screen and (max-width: 1550px) {
+  .section.about {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.section.about>.right>h1 {
+  font-size: 128px;
+}
 }
