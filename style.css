@@ -119,7 +119,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-.section.about>.right>h1 {
-  font-size: 128px;
-}
+  .section.about>.right>h1 {
+    font-size: 128px;
+  }
 }
