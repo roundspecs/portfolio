@@ -116,11 +116,11 @@
   padding: 0 40px 40px 40px;
 }
 
-.section.projects > .project-item {
+.section.projects>.project-item {
   margin: 20px 0;
 }
 
-.section.projects > .project-item > a {
+.section.projects>.project-item>a {
   font-weight: 600;
 }
 
@@ -128,11 +128,11 @@
   padding: 0 40px 40px 40px;
 }
 
-.section.awards > .project-item {
+.section.awards>.project-item {
   margin: 20px 0;
 }
 
-.section.awards > .project-item > a {
+.section.awards>.project-item>a {
   font-weight: 600;
 }
 
